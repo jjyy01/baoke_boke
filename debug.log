@@ -1,0 +1,537 @@
+date: 2014-11-23 11:59:40.560
+argv: node /Users/qingyun/.nvm/v0.8.14/bin/hexo g
+os: Darwin 14.0.0 darwin x64
+version:
+  hexo: 2.5.7
+  http_parser: 1.0
+  node: 0.8.14
+  v8: 3.11.10.25
+  ares: 1.7.5-DEV
+  uv: 0.8
+  zlib: 1.2.3
+  openssl: 1.0.0f
+---
+
+[debug] 11:59:39.881 Config file loaded
+[debug] 11:59:39.883 Version info checked successfully
+[debug] 11:59:39.923 Loading database.
+[debug] 11:59:39.962 Plugin loaded successfully: hexo-generator-feed
+[debug] 11:59:39.993 Processed: CNAME
+[debug] 11:59:40.420 Processed: LICENSE
+[debug] 11:59:40.420 Processed: README.md
+[debug] 11:59:40.441 Processed: source/css/_base/layout.styl
+[debug] 11:59:40.441 Processed: source/css/_base/utils.styl
+[debug] 11:59:40.441 Processed: source/css/_base/variable.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/archive.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/article.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/comment.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/footer.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/header.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/index.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/sidebar.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/syntax.styl
+[debug] 11:59:40.443 Processed: _posts/dynamics入门.md
+[debug] 11:59:40.443 Processed: _posts/让别人理解.md
+[debug] 11:59:40.443 Processed: _posts/随和的人更幸福.md
+[debug] 11:59:40.448 Processed: source/fancybox/blank.gif
+[debug] 11:59:40.449 Processed: source/fancybox/fancybox_loading.gif
+[debug] 11:59:40.449 Processed: source/fancybox/fancybox_loading@2x.gif
+[debug] 11:59:40.450 Processed: source/fancybox/fancybox_overlay.png
+[debug] 11:59:40.450 Processed: source/fancybox/fancybox_sprite.png
+[debug] 11:59:40.452 Processed: source/fancybox/fancybox_sprite@2x.png
+[debug] 11:59:40.453 Processed: source/fancybox/jquery.fancybox.css
+[debug] 11:59:40.453 Processed: source/fancybox/jquery.fancybox.pack.js
+[debug] 11:59:40.454 Processed: source/js/gallery.js
+[debug] 11:59:40.454 Processed: source/js/jquery.imagesloaded.min.js
+[debug] 11:59:40.455 Processed: source/css/style.styl
+[debug] 11:59:40.455 Processed: source/css/font/fontawesome-webfont.eot
+[debug] 11:59:40.456 Processed: source/css/font/fontawesome-webfont.svg
+[debug] 11:59:40.456 Processed: source/css/font/fontawesome-webfont.woff
+[debug] 11:59:40.457 Processed: source/css/font/fontawesome-webfont.ttf
+[debug] 11:59:40.460 Processed: layout/archive.ejs
+[debug] 11:59:40.461 Processed: layout/category.ejs
+[debug] 11:59:40.461 Processed: layout/index.ejs
+[debug] 11:59:40.461 Processed: layout/layout.ejs
+[debug] 11:59:40.461 Processed: layout/page.ejs
+[debug] 11:59:40.461 Processed: layout/post.ejs
+[debug] 11:59:40.461 Processed: layout/tag.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/category.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/recent_posts.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/search.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/tag.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/tagcloud.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/after_footer.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/archive.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/article.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/article.ejs~
+[debug] 11:59:40.461 Processed: layout/_partial/facebook_comment.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/footer.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/google_analytics.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/head.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/header.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/pagination.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/sidebar.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/category.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/gallery.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/share.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/tag.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/title.ejs
+[debug] 11:59:40.463 Theme config loaded
+[debug] 11:59:40.463 Processed: _config.yml
+[debug] 11:59:40.463 Processed: languages/de.yml
+[debug] 11:59:40.464 Processed: languages/default.yml
+[debug] 11:59:40.464 Processed: languages/es.yml
+[debug] 11:59:40.465 Processed: languages/ru.yml
+[debug] 11:59:40.465 Processed: languages/zh-CN.yml
+[debug] 11:59:40.466 Processed: languages/zh-TW.yml
+[debug] 11:59:40.466 Cache saved
+[debug] 11:59:40.467 Processed: layout/_partial/comment.ejs
+[info] 11:59:40.488 Files loaded in 0.525s
+[debug] 11:59:40.490 Render archive: archives/
+[debug] 11:59:40.491 Render archive: archives/2014/
+[debug] 11:59:40.491 Render archive: archives/2014/09/
+[debug] 11:59:40.492 Render archive: archives/2014/10/
+[debug] 11:59:40.492 Render archive: archives/2014/11/
+[debug] 11:59:40.492 Render index: 
+[debug] 11:59:40.492 Render post: 2014/11/21/随和的人更幸福/
+[debug] 11:59:40.493 Render post: 2014/10/19/dynamics入门/
+[debug] 11:59:40.493 Render post: 2014/09/18/让别人理解/
+[error] 11:59:40.546 HexoError: Render failed: 2014/11/21/随和的人更幸福/index.html
+ReferenceError: /Users/qingyun/hexo/themes/light/layout/post.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/qingyun/hexo/themes/light/layout/_partial/article.ejs:43
+    41| </article>
+    42| 
+ >> 43| <%- partial('comment') %>
+    44| 
+
+/Users/qingyun/hexo/themes/light/layout/_partial/comment.ejs:15
+    13| <section id="comments">
+    14|     <!-- 多说评论框 start -->
+ >> 15|     <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    16|     <!-- 多说评论框 end -->
+    17|     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    18|     <script type="text/javascript">
+
+post is not defined
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at exports.compile (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:293:13)
+    at module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/renderer/ejs.js:5:14)
+    at Object.exports.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at Object.module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/helper/partial.js:19:17)
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+
+[error] 11:59:40.556 HexoError: Render failed: 2014/10/19/dynamics入门/index.html
+ReferenceError: /Users/qingyun/hexo/themes/light/layout/post.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/qingyun/hexo/themes/light/layout/_partial/article.ejs:43
+    41| </article>
+    42| 
+ >> 43| <%- partial('comment') %>
+    44| 
+
+/Users/qingyun/hexo/themes/light/layout/_partial/comment.ejs:15
+    13| <section id="comments">
+    14|     <!-- 多说评论框 start -->
+ >> 15|     <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    16|     <!-- 多说评论框 end -->
+    17|     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    18|     <script type="text/javascript">
+
+post is not defined
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at exports.compile (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:293:13)
+    at module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/renderer/ejs.js:5:14)
+    at Object.exports.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at Object.module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/helper/partial.js:19:17)
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+
+[error] 11:59:40.558 HexoError: Render failed: 2014/09/18/让别人理解/index.html
+ReferenceError: /Users/qingyun/hexo/themes/light/layout/post.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/qingyun/hexo/themes/light/layout/_partial/article.ejs:43
+    41| </article>
+    42| 
+ >> 43| <%- partial('comment') %>
+    44| 
+
+/Users/qingyun/hexo/themes/light/layout/_partial/comment.ejs:15
+    13| <section id="comments">
+    14|     <!-- 多说评论框 start -->
+ >> 15|     <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    16|     <!-- 多说评论框 end -->
+    17|     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    18|     <script type="text/javascript">
+
+post is not defined
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at exports.compile (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:293:13)
+    at module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/renderer/ejs.js:5:14)
+    at Object.exports.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at Object.module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/helper/partial.js:19:17)
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+
+[debug] 11:59:40.559 Public folder cleared: archives/index.html,archives/2014/index.html,archives/2014/09/index.html,archives/2014/10/index.html,archives/2014/11/index.html,index.html,2014/11/21/随和的人更幸福/index.html,2014/10/19/dynamics入门/index.html,2014/09/18/让别人理解/index.html,atom.xml,js/script.js,css/style.css,css/fonts/FontAwesome.otf,css/fonts/fontawesome-webfont.eot,css/fonts/fontawesome-webfont.svg,css/fonts/fontawesome-webfont.ttf,css/fonts/fontawesome-webfont.woff,css/images/banner.jpg,fancybox/blank.gif,fancybox/fancybox_loading.gif,fancybox/fancybox_loading@2x.gif,fancybox/fancybox_overlay.png,fancybox/fancybox_sprite.png,fancybox/fancybox_sprite@2x.png,fancybox/jquery.fancybox.css,fancybox/jquery.fancybox.js,fancybox/jquery.fancybox.pack.js,fancybox/helpers/fancybox_buttons.png,fancybox/helpers/jquery.fancybox-buttons.css,fancybox/helpers/jquery.fancybox-buttons.js,fancybox/helpers/jquery.fancybox-media.js,fancybox/helpers/jquery.fancybox-thumbs.css,fancybox/helpers/jquery.fancybox-thumbs.js,CNAME,js/gallery.js,js/jquery.imagesloaded.min.js,js/moment.min.js,js/scale.fix.js,css/images/checker.png,css/font/fontawesome-webfont.eot,css/font/fontawesome-webfont.svg,css/font/fontawesome-webfont.ttf,css/font/fontawesome-webfont.woff[debug] 11:59:39.881 Config file loaded
+[debug] 11:59:39.883 Version info checked successfully
+[debug] 11:59:39.923 Loading database.
+[debug] 11:59:39.962 Plugin loaded successfully: hexo-generator-feed
+[debug] 11:59:39.993 Processed: CNAME
+[debug] 11:59:40.420 Processed: LICENSE
+[debug] 11:59:40.420 Processed: README.md
+[debug] 11:59:40.441 Processed: source/css/_base/layout.styl
+[debug] 11:59:40.441 Processed: source/css/_base/utils.styl
+[debug] 11:59:40.441 Processed: source/css/_base/variable.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/archive.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/article.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/comment.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/footer.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/header.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/index.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/sidebar.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/syntax.styl
+[debug] 11:59:40.443 Processed: _posts/dynamics入门.md
+[debug] 11:59:40.443 Processed: _posts/让别人理解.md
+[debug] 11:59:40.443 Processed: _posts/随和的人更幸福.md
+[debug] 11:59:40.448 Processed: source/fancybox/blank.gif
+[debug] 11:59:40.449 Processed: source/fancybox/fancybox_loading.gif
+[debug] 11:59:40.449 Processed: source/fancybox/fancybox_loading@2x.gif
+[debug] 11:59:40.450 Processed: source/fancybox/fancybox_overlay.png
+[debug] 11:59:40.450 Processed: source/fancybox/fancybox_sprite.png
+[debug] 11:59:40.452 Processed: source/fancybox/fancybox_sprite@2x.png
+[debug] 11:59:40.453 Processed: source/fancybox/jquery.fancybox.css
+[debug] 11:59:40.453 Processed: source/fancybox/jquery.fancybox.pack.js
+[debug] 11:59:40.454 Processed: source/js/gallery.js
+[debug] 11:59:40.454 Processed: source/js/jquery.imagesloaded.min.js
+[debug] 11:59:40.455 Processed: source/css/style.styl
+[debug] 11:59:40.455 Processed: source/css/font/fontawesome-webfont.eot
+[debug] 11:59:40.456 Processed: source/css/font/fontawesome-webfont.svg
+[debug] 11:59:40.456 Processed: source/css/font/fontawesome-webfont.woff
+[debug] 11:59:40.457 Processed: source/css/font/fontawesome-webfont.ttf
+[debug] 11:59:40.460 Processed: layout/archive.ejs
+[debug] 11:59:40.461 Processed: layout/category.ejs
+[debug] 11:59:40.461 Processed: layout/index.ejs
+[debug] 11:59:40.461 Processed: layout/layout.ejs
+[debug] 11:59:40.461 Processed: layout/page.ejs
+[debug] 11:59:40.461 Processed: layout/post.ejs
+[debug] 11:59:40.461 Processed: layout/tag.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/category.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/recent_posts.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/search.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/tag.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/tagcloud.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/after_footer.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/archive.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/article.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/article.ejs~
+[debug] 11:59:40.461 Processed: layout/_partial/facebook_comment.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/footer.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/google_analytics.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/head.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/header.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/pagination.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/sidebar.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/category.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/gallery.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/share.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/tag.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/title.ejs
+[debug] 11:59:40.463 Theme config loaded
+[debug] 11:59:40.463 Processed: _config.yml
+[debug] 11:59:40.463 Processed: languages/de.yml
+[debug] 11:59:40.464 Processed: languages/default.yml
+[debug] 11:59:40.464 Processed: languages/es.yml
+[debug] 11:59:40.465 Processed: languages/ru.yml
+[debug] 11:59:40.465 Processed: languages/zh-CN.yml
+[debug] 11:59:40.466 Processed: languages/zh-TW.yml
+[debug] 11:59:40.466 Cache saved
+[debug] 11:59:40.467 Processed: layout/_partial/comment.ejs
+[info] 11:59:40.488 Files loaded in 0.525s
+[debug] 11:59:40.490 Render archive: archives/
+[debug] 11:59:40.491 Render archive: archives/2014/
+[debug] 11:59:40.491 Render archive: archives/2014/09/
+[debug] 11:59:40.492 Render archive: archives/2014/10/
+[debug] 11:59:40.492 Render archive: archives/2014/11/
+[debug] 11:59:40.492 Render index: 
+[debug] 11:59:40.492 Render post: 2014/11/21/随和的人更幸福/
+[debug] 11:59:40.493 Render post: 2014/10/19/dynamics入门/
+[debug] 11:59:40.493 Render post: 2014/09/18/让别人理解/
+[error] 11:59:40.546 HexoError: Render failed: 2014/11/21/随和的人更幸福/index.html
+ReferenceError: /Users/qingyun/hexo/themes/light/layout/post.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/qingyun/hexo/themes/light/layout/_partial/article.ejs:43
+    41| </article>
+    42| 
+ >> 43| <%- partial('comment') %>
+    44| 
+
+/Users/qingyun/hexo/themes/light/layout/_partial/comment.ejs:15
+    13| <section id="comments">
+    14|     <!-- 多说评论框 start -->
+ >> 15|     <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    16|     <!-- 多说评论框 end -->
+    17|     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    18|     <script type="text/javascript">
+
+post is not defined
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at exports.compile (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:293:13)
+    at module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/renderer/ejs.js:5:14)
+    at Object.exports.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at Object.module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/helper/partial.js:19:17)
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+
+[error] 11:59:40.556 HexoError: Render failed: 2014/10/19/dynamics入门/index.html
+ReferenceError: /Users/qingyun/hexo/themes/light/layout/post.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/qingyun/hexo/themes/light/layout/_partial/article.ejs:43
+    41| </article>
+    42| 
+ >> 43| <%- partial('comment') %>
+    44| 
+
+/Users/qingyun/hexo/themes/light/layout/_partial/comment.ejs:15
+    13| <section id="comments">
+    14|     <!-- 多说评论框 start -->
+ >> 15|     <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    16|     <!-- 多说评论框 end -->
+    17|     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    18|     <script type="text/javascript">
+
+post is not defined
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at exports.compile (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:293:13)
+    at module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/renderer/ejs.js:5:14)
+    at Object.exports.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at Object.module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/helper/partial.js:19:17)
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+
+[error] 11:59:40.558 HexoError: Render failed: 2014/09/18/让别人理解/index.html
+ReferenceError: /Users/qingyun/hexo/themes/light/layout/post.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/qingyun/hexo/themes/light/layout/_partial/article.ejs:43
+    41| </article>
+    42| 
+ >> 43| <%- partial('comment') %>
+    44| 
+
+/Users/qingyun/hexo/themes/light/layout/_partial/comment.ejs:15
+    13| <section id="comments">
+    14|     <!-- 多说评论框 start -->
+ >> 15|     <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    16|     <!-- 多说评论框 end -->
+    17|     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    18|     <script type="text/javascript">
+
+post is not defined
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at exports.compile (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:293:13)
+    at module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/renderer/ejs.js:5:14)
+    at Object.exports.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at Object.module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/helper/partial.js:19:17)
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+
+[debug] 11:59:40.559 Public folder cleared: archives/index.html,archives/2014/index.html,archives/2014/09/index.html,archives/2014/10/index.html,archives/2014/11/index.html,index.html,2014/11/21/随和的人更幸福/index.html,2014/10/19/dynamics入门/index.html,2014/09/18/让别人理解/index.html,atom.xml,js/script.js,css/style.css,css/fonts/FontAwesome.otf,css/fonts/fontawesome-webfont.eot,css/fonts/fontawesome-webfont.svg,css/fonts/fontawesome-webfont.ttf,css/fonts/fontawesome-webfont.woff,css/images/banner.jpg,fancybox/blank.gif,fancybox/fancybox_loading.gif,fancybox/fancybox_loading@2x.gif,fancybox/fancybox_overlay.png,fancybox/fancybox_sprite.png,fancybox/fancybox_sprite@2x.png,fancybox/jquery.fancybox.css,fancybox/jquery.fancybox.js,fancybox/jquery.fancybox.pack.js,fancybox/helpers/fancybox_buttons.png,fancybox/helpers/jquery.fancybox-buttons.css,fancybox/helpers/jquery.fancybox-buttons.js,fancybox/helpers/jquery.fancybox-media.js,fancybox/helpers/jquery.fancybox-thumbs.css,fancybox/helpers/jquery.fancybox-thumbs.js,CNAME,js/gallery.js,js/jquery.imagesloaded.min.js,js/moment.min.js,js/scale.fix.js,css/images/checker.png,css/font/fontawesome-webfont.eot,css/font/fontawesome-webfont.svg,css/font/fontawesome-webfont.ttf,css/font/fontawesome-webfont.woff[debug] 11:59:39.881 Config file loaded
+[debug] 11:59:39.883 Version info checked successfully
+[debug] 11:59:39.923 Loading database.
+[debug] 11:59:39.962 Plugin loaded successfully: hexo-generator-feed
+[debug] 11:59:39.993 Processed: CNAME
+[debug] 11:59:40.420 Processed: LICENSE
+[debug] 11:59:40.420 Processed: README.md
+[debug] 11:59:40.441 Processed: source/css/_base/layout.styl
+[debug] 11:59:40.441 Processed: source/css/_base/utils.styl
+[debug] 11:59:40.441 Processed: source/css/_base/variable.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/archive.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/article.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/comment.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/footer.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/header.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/index.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/sidebar.styl
+[debug] 11:59:40.441 Processed: source/css/_partial/syntax.styl
+[debug] 11:59:40.443 Processed: _posts/dynamics入门.md
+[debug] 11:59:40.443 Processed: _posts/让别人理解.md
+[debug] 11:59:40.443 Processed: _posts/随和的人更幸福.md
+[debug] 11:59:40.448 Processed: source/fancybox/blank.gif
+[debug] 11:59:40.449 Processed: source/fancybox/fancybox_loading.gif
+[debug] 11:59:40.449 Processed: source/fancybox/fancybox_loading@2x.gif
+[debug] 11:59:40.450 Processed: source/fancybox/fancybox_overlay.png
+[debug] 11:59:40.450 Processed: source/fancybox/fancybox_sprite.png
+[debug] 11:59:40.452 Processed: source/fancybox/fancybox_sprite@2x.png
+[debug] 11:59:40.453 Processed: source/fancybox/jquery.fancybox.css
+[debug] 11:59:40.453 Processed: source/fancybox/jquery.fancybox.pack.js
+[debug] 11:59:40.454 Processed: source/js/gallery.js
+[debug] 11:59:40.454 Processed: source/js/jquery.imagesloaded.min.js
+[debug] 11:59:40.455 Processed: source/css/style.styl
+[debug] 11:59:40.455 Processed: source/css/font/fontawesome-webfont.eot
+[debug] 11:59:40.456 Processed: source/css/font/fontawesome-webfont.svg
+[debug] 11:59:40.456 Processed: source/css/font/fontawesome-webfont.woff
+[debug] 11:59:40.457 Processed: source/css/font/fontawesome-webfont.ttf
+[debug] 11:59:40.460 Processed: layout/archive.ejs
+[debug] 11:59:40.461 Processed: layout/category.ejs
+[debug] 11:59:40.461 Processed: layout/index.ejs
+[debug] 11:59:40.461 Processed: layout/layout.ejs
+[debug] 11:59:40.461 Processed: layout/page.ejs
+[debug] 11:59:40.461 Processed: layout/post.ejs
+[debug] 11:59:40.461 Processed: layout/tag.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/category.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/recent_posts.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/search.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/tag.ejs
+[debug] 11:59:40.461 Processed: layout/_widget/tagcloud.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/after_footer.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/archive.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/article.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/article.ejs~
+[debug] 11:59:40.461 Processed: layout/_partial/facebook_comment.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/footer.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/google_analytics.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/head.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/header.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/pagination.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/sidebar.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/category.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/gallery.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/share.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/tag.ejs
+[debug] 11:59:40.461 Processed: layout/_partial/post/title.ejs
+[debug] 11:59:40.463 Theme config loaded
+[debug] 11:59:40.463 Processed: _config.yml
+[debug] 11:59:40.463 Processed: languages/de.yml
+[debug] 11:59:40.464 Processed: languages/default.yml
+[debug] 11:59:40.464 Processed: languages/es.yml
+[debug] 11:59:40.465 Processed: languages/ru.yml
+[debug] 11:59:40.465 Processed: languages/zh-CN.yml
+[debug] 11:59:40.466 Processed: languages/zh-TW.yml
+[debug] 11:59:40.466 Cache saved
+[debug] 11:59:40.467 Processed: layout/_partial/comment.ejs
+[info] 11:59:40.488 Files loaded in 0.525s
+[debug] 11:59:40.490 Render archive: archives/
+[debug] 11:59:40.491 Render archive: archives/2014/
+[debug] 11:59:40.491 Render archive: archives/2014/09/
+[debug] 11:59:40.492 Render archive: archives/2014/10/
+[debug] 11:59:40.492 Render archive: archives/2014/11/
+[debug] 11:59:40.492 Render index: 
+[debug] 11:59:40.492 Render post: 2014/11/21/随和的人更幸福/
+[debug] 11:59:40.493 Render post: 2014/10/19/dynamics入门/
+[debug] 11:59:40.493 Render post: 2014/09/18/让别人理解/
+[error] 11:59:40.546 HexoError: Render failed: 2014/11/21/随和的人更幸福/index.html
+ReferenceError: /Users/qingyun/hexo/themes/light/layout/post.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/qingyun/hexo/themes/light/layout/_partial/article.ejs:43
+    41| </article>
+    42| 
+ >> 43| <%- partial('comment') %>
+    44| 
+
+/Users/qingyun/hexo/themes/light/layout/_partial/comment.ejs:15
+    13| <section id="comments">
+    14|     <!-- 多说评论框 start -->
+ >> 15|     <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    16|     <!-- 多说评论框 end -->
+    17|     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    18|     <script type="text/javascript">
+
+post is not defined
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at exports.compile (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:293:13)
+    at module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/renderer/ejs.js:5:14)
+    at Object.exports.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at Object.module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/helper/partial.js:19:17)
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+
+[error] 11:59:40.556 HexoError: Render failed: 2014/10/19/dynamics入门/index.html
+ReferenceError: /Users/qingyun/hexo/themes/light/layout/post.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/qingyun/hexo/themes/light/layout/_partial/article.ejs:43
+    41| </article>
+    42| 
+ >> 43| <%- partial('comment') %>
+    44| 
+
+/Users/qingyun/hexo/themes/light/layout/_partial/comment.ejs:15
+    13| <section id="comments">
+    14|     <!-- 多说评论框 start -->
+ >> 15|     <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    16|     <!-- 多说评论框 end -->
+    17|     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    18|     <script type="text/javascript">
+
+post is not defined
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at exports.compile (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:293:13)
+    at module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/renderer/ejs.js:5:14)
+    at Object.exports.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at Object.module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/helper/partial.js:19:17)
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+
+[error] 11:59:40.558 HexoError: Render failed: 2014/09/18/让别人理解/index.html
+ReferenceError: /Users/qingyun/hexo/themes/light/layout/post.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/qingyun/hexo/themes/light/layout/_partial/article.ejs:43
+    41| </article>
+    42| 
+ >> 43| <%- partial('comment') %>
+    44| 
+
+/Users/qingyun/hexo/themes/light/layout/_partial/comment.ejs:15
+    13| <section id="comments">
+    14|     <!-- 多说评论框 start -->
+ >> 15|     <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    16|     <!-- 多说评论框 end -->
+    17|     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    18|     <script type="text/javascript">
+
+post is not defined
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at exports.compile (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:293:13)
+    at module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/renderer/ejs.js:5:14)
+    at Object.exports.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at Object.module.exports (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/lib/plugins/helper/partial.js:19:17)
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+    at eval (eval at <anonymous> (/Users/qingyun/.nvm/v0.8.14/lib/node_modules/hexo/node_modules/ejs/lib/ejs.js:242:14))
+
+[debug] 11:59:40.559 Public folder cleared: archives/index.html,archives/2014/index.html,archives/2014/09/index.html,archives/2014/10/index.html,archives/2014/11/index.html,index.html,2014/11/21/随和的人更幸福/index.html,2014/10/19/dynamics入门/index.html,2014/09/18/让别人理解/index.html,atom.xml,js/script.js,css/style.css,css/fonts/FontAwesome.otf,css/fonts/fontawesome-webfont.eot,css/fonts/fontawesome-webfont.svg,css/fonts/fontawesome-webfont.ttf,css/fonts/fontawesome-webfont.woff,css/images/banner.jpg,fancybox/blank.gif,fancybox/fancybox_loading.gif,fancybox/fancybox_loading@2x.gif,fancybox/fancybox_overlay.png,fancybox/fancybox_sprite.png,fancybox/fancybox_sprite@2x.png,fancybox/jquery.fancybox.css,fancybox/jquery.fancybox.js,fancybox/jquery.fancybox.pack.js,fancybox/helpers/fancybox_buttons.png,fancybox/helpers/jquery.fancybox-buttons.css,fancybox/helpers/jquery.fancybox-buttons.js,fancybox/helpers/jquery.fancybox-media.js,fancybox/helpers/jquery.fancybox-thumbs.css,fancybox/helpers/jquery.fancybox-thumbs.js,CNAME,js/gallery.js,js/jquery.imagesloaded.min.js,js/moment.min.js,js/scale.fix.js,css/images/checker.png,css/font/fontawesome-webfont.eot,css/font/fontawesome-webfont.svg,css/font/fontawesome-webfont.ttf,css/font/fontawesome-webfont.woff
