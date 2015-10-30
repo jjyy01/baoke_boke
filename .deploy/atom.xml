@@ -4,7 +4,7 @@
   <subtitle><![CDATA[危机信息]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://biancheng.me/"/>
-  <updated>2015-10-22T06:11:00.469Z</updated>
+  <updated>2015-10-24T05:47:57.706Z</updated>
   <id>http://biancheng.me/</id>
   
   <author>
@@ -13,6 +13,19 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[月季]]></title>
+    <link href="http://biancheng.me/2015/10/24/%E6%9C%88%E5%AD%A3/"/>
+    <id>http://biancheng.me/2015/10/24/月季/</id>
+    <published>2015-10-24T05:43:00.000Z</published>
+    <updated>2015-10-24T05:47:38.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[AFNetworking 3.0 & AFNetworking 2.X]]></title>
@@ -131,7 +144,7 @@ AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 
 
 <h3 id="UIKit的迁移">UIKit的迁移</h3>
-<p>图片下载已经被重构，以遵循AlamofireImage架构与新的AFImageDownloader类。这个类的图片下载职责的代���人是UIButton与UIImageView的类目，并且提供了一些方法，在必要时可以自定义。类别中，下载远程图片的实际方法没有改变。</p>
+<p>图片下载已经被重构，以遵循AlamofireImage架构与新的AFImageDownloader类。这个类的图片下载职责的代理人是UIButton与UIImageView的类目，并且提供了一些方法，在必要时可以自定义。类别中，下载远程图片的实际方法没有改变。</p>
 <p>UIWebView的类目被重构为使用AFHTTPSessionManager作为其网络请求。</p>
 <h3 id="UIAlertView的类目被废弃">UIAlertView的类目被废弃</h3>
 <p>从AFNetworking 3.0后UIAlertView的类目因过时而被废弃。并没有提供UIAlertController类目的计划，因为这是应用程序应处理的逻辑，而不是这个库。</p>
@@ -177,7 +190,7 @@ AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     <published>2014-10-19T15:36:35.000Z</published>
     <updated>2014-11-12T02:37:30.000Z</updated>
     <content type="html"><![CDATA[<h3 id="什么是UIKit动力学（UIKit_Dynamics）">什么是UIKit动力学（UIKit Dynamics）</h3>
-<p>其实就是UIKit的一套动画和交互体系。我们现在进行UI动画基本都是使用CoreAnimation或者UIView animations。而UIKit动力学最大的特点是将现实世界动力驱动的动画引入了UIKit，比如重力，铰链连接，碰撞，悬挂等效果。一言蔽之，即是，将2D物理引擎引入了人UIKit。需要注意，UIKit动力学的引入，并不是以替代CA或者UIView动画为目的的，在绝大多数情况下CA或者UIView动画仍然是最优方案，只有在需要引入逼真的交互设计的时候，才需要使用UIKit动力学它是作为现有交互设计和实现的一种补充而存在的。<br>目的当然是更加自然和炫目的UI动画效果，比如模拟现实的拖拽和弹性效果，放在以前如果单用iOS SDK的动画实现起来还是相当困难的，而在UIKit Dynamics的帮助下，复杂的动画效果可能也只需要很短的代码（基本100行以内…其实现在用UIView animation想实现一个不太复杂的动画所要的代码行数都不止这个数了吧）。总之，便利多多，配合UI交互设计，以前很多不敢想和不敢写（至少不敢自己写）的效果实现起来会非常方便，也相信在iOS7的时代各色使用UIKit动力学的应用的在动画效果肯定会上升一个档次。<br>那么，应该怎么做呢<br><a id="more"></a><br>UIKit动力学实现的结构<br>为了实现动力UI，需要注册一套UI行为的体系，之后UI便会按照预先的设定进行运动了。我们应该了解的新的基本概念有如下四个：<br>UIDynamicItem：用来描述一个力学物体的状态，其实就是实现了UIDynamicItem委托的对象，或者抽象为有面积有旋转的质点；<br>UIDynamicBehavior：动力行为的描述，用来指定UIDynamicItem应该如何运动，即定义适用的物理规则。一般我们使用这个类的子类对象来对一组UIDynamicItem应该遵守的行为规则进行描述；<br>UIDynamicAnimator；动画的播放者，动力行为（UIDynamicBehavior）的容器，添加到容器内的行为将发挥作用；<br>ReferenceView：等同于力学参考系，如果你的初中物理不是语文老师教的话，我想你知道这是啥..只有当想要添加力学的UIView是ReferenceView的子view时，动力UI才发生作用。<br>光说不练假把式，来做点简单的demo吧。比如为一个view添加重力行为：</p>
+<p>其实就是UIKit的一套动画和交互体系。我们现在进行UI动画基本都是使用CoreAnimation或者UIView animations。而UIKit动力学最大的特点是将现实世界动力驱动的动画引入了UIKit，比如重力，铰链连接，碰撞，悬挂等效果。一言蔽之，即是，将2D物理引擎引入了人UIKit。需要注意，UIKit动力学的引入，并不是以替代CA或者UIView动画为目的的，在绝大多数情况下CA或者UIView动画仍然是最优方案，只有在需要引入逼真的交互设计的时候，才需要使用UIKit动力学它是作为现有交互设计和实现的一种补充而存在的。<br>目的当然是更加自然和炫目的UI动画效果，比如模拟现实的拖拽和弹性效果，放在以前如果单用iOS SDK的动画实现起来还是相当困难的，而在UIKit Dynamics的帮助下，复杂的动画效果可能也只需要很短的代码（基本100行以内…其实现在用UIView animation想实现一个不太复杂的动画所要的代码行数都不止这个数了吧）。总之，便利多多，配合UI交互设计，以前很多不敢想和不敢写（至少不敢自己写）的效果实现起来会非常方便，也相信在iOS7的时代各色使用UIKit动力学的应用的在动画效果肯定会上升一个档次。<br>那么，应该怎么做呢<br><a id="more"></a><br>UIKit动力学实现的结构<br>为了实现动力UI，需要注册一套UI行为的体系，之后UI便会按照预先的设定进行运动了。我们应该了解的新的基本概念有如下四个：<br>UIDynamicItem：用来描述一个力学物体的状态���其实就是实现了UIDynamicItem委托的对象，或者抽象为有面积有旋转的质点；<br>UIDynamicBehavior：动力行为的描述，用来指定UIDynamicItem应该如何运动，即定义适用的物理规则。一般我们使用这个类的子类对象来对一组UIDynamicItem应该遵守的行为规则进行描述；<br>UIDynamicAnimator；动画的播放者，动力行为（UIDynamicBehavior）的容器，添加到容器内的行为将发挥作用；<br>ReferenceView：等同于力学参考系，如果你的初中物理不是语文老师教的话，我想你知道这是啥..只有当想要添加力学的UIView是ReferenceView的子view时，动力UI才发生作用。<br>光说不练假把式，来做点简单的demo吧。比如为一个view添加重力行为：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -388,14 +401,13 @@ AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     <link href="http://biancheng.me/2014/09/18/%E8%AE%A9%E5%88%AB%E4%BA%BA%E7%90%86%E8%A7%A3/"/>
     <id>http://biancheng.me/2014/09/18/让别人理解/</id>
     <published>2014-09-18T03:20:28.000Z</published>
-    <updated>2015-01-31T04:02:33.000Z</updated>
+    <updated>2015-10-23T14:09:22.000Z</updated>
     <content type="html"><![CDATA[<p>理解分为两类，将需要理解的事物归到已经理解的，此为上策；不然，那就只能强制理解，习惯的力量是无穷的，如果习惯了，那他就应该是那样，不需要理解了。</p>
-<p><img src="123.png" alt="Mou icon"></p>
+<p><img src="http://7xnr36.com1.z0.glb.clouddn.com/IMG_0773.JPG" alt="月季"></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>理解分为两类，将需要理解的事物归到已经理解的，此为上策；不然，那就只能强制理解，习惯的力量是无穷的，如果习惯了，那他就应该是那样，不需要理解了。</p>
-<p><img src="123.png" alt="Mou icon"></p>
-]]>
+<p><img src="http://7xnr36.com1.z0.glb.clouddn.com/IMG_0773.]]>
     </summary>
     
   </entry>
