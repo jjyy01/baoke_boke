@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>swift中switch使用 | weiji info</title>
+  <meta name="author" content="weiji info">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="swift中switch使用"/>
+  <meta property="og:site_name" content="weiji info"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="weiji info" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">weiji info</a></h1>
+  <h2><a href="/">危机信息</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-11-11T07:14:52.000Z"><a href="/2015/11/11/swift中switch使用/">11月 11 2015</a></time>
+      
+      
+  
+    <h1 class="title">swift中switch使用</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="Switch简介">Switch简介</h3>
+<p>Switch作为选择结构中必不可少的语句也被加入到了Swift中，只要有过编程经验的人对Switch语句都不会感到陌生，但苹果对Switch进行了大大的增强，使其拥有其他语言中没有的特性。使用Switch语句很简单：</p>
+<a id="more"></a>
+
+
+
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="keyword">var</span> i = <span class="number">0</span>  
+<span class="keyword">switch</span> i {  
+    <span class="keyword">case</span> <span class="number">0</span>:  
+        <span class="string">"0"</span> <span class="comment">//被输出  </span>
+    <span class="keyword">case</span> <span class="number">1</span>:  
+        <span class="string">"1"</span>  
+    <span class="keyword">default</span>:  
+        <span class="string">"2"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>在这个最简单的Switch语句中，与其他语言很不同的一点是：不用显式的加上break。Swift的Switch语句会自动在case结尾处加上break，执行完满足条件的case部分后，就自动退出了。但是在某些情况下，我们可能会希望Switch能同时执行两条case，那么可以这样：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="keyword">var</span> i = <span class="number">3</span>  
+<span class="keyword">switch</span> i {  
+    <span class="keyword">case</span> <span class="number">0</span>,<span class="number">3</span>:  
+        <span class="string">"0"</span> <span class="comment">//被输出  </span>
+    <span class="keyword">case</span> <span class="number">1</span>:  
+        <span class="string">"1"</span>  
+    <span class="keyword">default</span>:  
+        <span class="string">"2"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>在case后的多个条件中，用逗号隔开即可。<br>如果就是想执行完一条case之后，想继续执行下一条case，就要用到一个新的关键字：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="keyword">var</span> i =<span class="number"> 0</span>  
+<span class="keyword">switch</span> i {  
+    <span class="keyword">case</span><span class="number"> 0</span>:  
+        <span class="string">"0"</span> <span class="comment">//被输出  </span>
+        <span class="keyword">fallthrough</span>  
+    <span class="keyword">case</span><span class="number"> 1</span>:  
+        <span class="string">"1"</span> <span class="comment">//被输出  </span>
+    <span class="keyword">case</span><span class="number"> 2</span>:  
+        <span class="string">"2"</span>  
+    <span class="keyword">default</span>:  
+        <span class="string">"default"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>使用新的关键字fallthrough能使Switch在执行完一个case之后，紧接着执行下一条case。<br>Swift的Switch语句一定要涵盖所有的情况，这并不是说一定要有default，只要上面的case能满足所有的情况，就可以不用写default。<br>需要注意的地方有两点：<br>Switch当然也支持显式的break，通常只有一种情况下你会这么做，那就是当你也不想在default里做任何事情的时候，这个时候你就可以在default里显式地加上一句break。<br>fallthrough并不是在任何情况下都有效，当你在Switch里使用Value Binding技术的时候，fallthrough就被禁止了。Value Binding在下面会讲到。</p>
+<p>支持多种数据类型<br>在Objective-C里，Switch语句只能支持整形的数据（或者一个字符），但是在Swift里，Switch能支持多种数据类型，包括浮点、布尔、字符串等：<br>支持浮点：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="keyword">let</span> <span class="keyword">float</span> = <span class="number">1.5</span>  
+<span class="keyword">switch</span> <span class="keyword">float</span> {  
+    <span class="keyword">case</span> <span class="number">1.5</span>:  
+        <span class="string">"1.5"</span>   <span class="comment">//被输出  </span>
+    <span class="keyword">default</span>:  
+        <span class="string">"default"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>支持布尔：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="keyword">let</span> isSuccess = <span class="keyword">true</span>  
+<span class="keyword">switch</span> isSuccess {  
+    <span class="keyword">case</span> <span class="keyword">true</span>:  
+        <span class="string">"true"</span>   <span class="comment">//被输出  </span>
+    <span class="keyword">default</span>:  
+        <span class="string">"default"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>支持字符串：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="keyword">let</span> name = <span class="string">"Bannings"</span>  
+<span class="keyword">switch</span> name {  
+    <span class="keyword">case</span> <span class="string">"Bannings"</span>:  
+        <span class="string">"Bannings"</span>   <span class="comment">//被输出  </span>
+    <span class="keyword">default</span>:  
+        <span class="string">"default"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>可以说是史上支持数据类型最多的Switch了。</p>
+<h3 id="支持区间运算符">支持区间运算符</h3>
+<p>不仅仅是循环结构里可以用区间运算符，在Switch里同样可以用区间运算符：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre>var i = <span class="number">15</span>  
+<span class="keyword">switch</span> i {  
+    case <span class="number">0</span> <span class="keyword">...</span> <span class="number">10</span>:  
+        <span class="string">"0~10"</span>  
+    case <span class="number">11</span> <span class="keyword">...</span> <span class="number">20</span>:  
+        <span class="string">"11~20"</span> //被输出  
+    default:  
+        <span class="string">"default"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>对某个数值区间进行批量匹配，这样是不是很酷？浮点数也同样支持区间运算符。</p>
+<h3 id="支持元组">支持元组</h3>
+<p>作为被大大增强的Switch，元组也是被支持的：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="keyword">let</span> request = (<span class="keyword">true</span>,<span class="string">"success"</span>)  
+<span class="keyword">switch</span> request {  
+    <span class="keyword">case</span> (<span class="keyword">true</span>, <span class="string">"success"</span>):  
+        <span class="string">"success"</span>   <span class="comment">//被输出  </span>
+    <span class="keyword">case</span> (<span class="keyword">false</span>, <span class="string">"failed"</span>):  
+        <span class="string">"failed"</span>  
+    <span class="keyword">default</span>:  
+        <span class="string">"default"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>使用元组和使用其他数据类型一致，不过元组还有一项特点，对于不想关心的值，可以用下划线_跳过，如：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="keyword">let</span> (name,  _, age) = (<span class="string">"Bannings"</span> ,<span class="keyword">true</span>, <span class="number">22</span>)  
+那么在使用Switch时，同样支持这项特性：
+<span class="keyword">let</span> request = (<span class="keyword">true</span>,<span class="string">"success"</span>)  
+<span class="keyword">switch</span> request {  
+    <span class="keyword">case</span> (_, <span class="string">"success"</span>):  
+        <span class="string">"success"</span>   <span class="comment">//被输出  </span>
+    <span class="keyword">case</span> (<span class="keyword">false</span>, _):  
+        <span class="string">"failed"</span>  
+    <span class="keyword">default</span>:  
+        <span class="string">"default"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>对于不关心的值跳过，只要满足另一个值就行了。需要注意一点的是，如果元组中的值也是数字类型，那么也是可以用区间运算符的：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre>let request = (<span class="number">10</span>,<span class="string">"failed"</span>)  
+<span class="keyword">switch</span> request {  
+    case (_, <span class="string">"success"</span>):  
+        <span class="string">"success"</span>  
+    case (<span class="number">1</span> <span class="keyword">...</span> <span class="number">10</span>, _):  
+        <span class="string">"1~10"</span>    //被输出  
+    default:  
+        <span class="string">"default"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<h3 id="Value_Binding">Value Binding</h3>
+<p>针对元组，Switch还支持类似于Optional Binding的Value Binding，就是能把元组中的各个值提取出来，然后直接在下面使用：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre><span class="keyword">let</span> request = (<span class="number">0</span>,<span class="string">"success"</span>)  
+<span class="keyword">switch</span> request {  
+    <span class="keyword">case</span> (<span class="number">0</span>, <span class="keyword">let</span> state):  
+        state    <span class="comment">//被输出:success  </span>
+    <span class="keyword">case</span> (<span class="keyword">let</span> errorCode, _):  
+        <span class="string">"error code is \(errorCode)"</span>  
+}  <span class="comment">// 涵盖了所有可能的case，不用写default了  </span>
+这样也是可以的：
+<span class="keyword">let</span> request = (<span class="number">0</span>,<span class="string">"success"</span>)  
+<span class="keyword">switch</span> request {  
+    <span class="keyword">case</span> <span class="keyword">let</span> (errorCode, state):  
+        state    <span class="comment">//被输出:success  </span>
+    <span class="keyword">case</span> (<span class="keyword">let</span> errorCode, _):  
+        <span class="string">"error code is \(errorCode)"</span>  
+}
+</pre></td></tr></table></figure>
+
+
+<p>把let放在外面和放在里面为每一个元素单独写上let是等价的。<br>当你在一个case里使用Value Binding的时候，如果你同时也在它的上一个case里使用了fallthrough，这是编译器所不允许的，你可能会收到这样一个编译错误：</p>
+<p>只要把下面的errorCode去掉就行了，当然，考虑好自己的逻辑。</p>
+<h3 id="支持额外的逻辑判断">支持额外的逻辑判断</h3>
+<p>在使用Switch语句时，Switch会适当地导向相应的case部分，这其实就相当于做了一次逻辑判断，但Swift的Switch语句还支持额外的逻辑判断：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="keyword">let</span> request = (<span class="number">0</span>,<span class="string">"success"</span>)  
+<span class="keyword">switch</span> request {  
+    <span class="keyword">case</span> (<span class="number">0</span>, <span class="keyword">let</span> state) <span class="keyword">where</span> state != <span class="string">"success"</span>:  
+        state  
+    <span class="keyword">case</span> (<span class="keyword">let</span> errorCode, _):  
+        <span class="string">"error code is \(errorCode)"</span><span class="comment">//被输出:"error code is 0"  </span>
+}
+</pre></td></tr></table></figure>
+
+
+<p>这同样很酷，相信在某种情况下会派上大用场。</p>
+<h3 id="总结">总结</h3>
+<p>Swift对Switch进行了大大增强，使Switch的灵活性得到了很大提升，这是激动人心的改变，但是如果掌控不好其中的变化，可能会使你在进行错误排查时增加难度，也会使代码复杂度变高。在适当地时候灵活运用，保持头脑清晰总是有益的。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/swift/">swift</a>, <a href="/tags/iOS/">iOS</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://biancheng.me/2015/11/11/swift中switch使用/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:biancheng.me">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/iOS/">iOS</a><small>3</small></li>
+  
+    <li><a href="/tags/swift/">swift</a><small>1</small></li>
+  
+    <li><a href="/tags/第三方库/">第三方库</a><small>1</small></li>
+  
+    <li><a href="/tags/随笔/">随笔</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 weiji info
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
