@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="ujianVerification" content="90f7e05b4ebf6d93b26b29571bfa3d8d" />
+<meta name="wumiiVerification" content="7aa6b405-12b5-4f11-866e-44744aa0ff26" />
+<meta name="baidu-site-verification" content="lN75kqASJm" />
+<meta name="baidu_union_verify" content="c369e2e06e939daead298c9098d2638e">
+
+  <meta charset="utf-8">
+  
+  <title>使用Charles(青花瓷)，在Mac环境下对android手机抓包 | Xiong Hai Zi</title>
+  <meta name="author" content="熊孩子">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="使用Charles(青花瓷)，在Mac环境下对android手机抓包"/>
+  <meta property="og:site_name" content="Xiong Hai Zi"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Xiong Hai Zi" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--
+-->
+  
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7689c42ef58b89bba0466fbb45f71d72";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+  
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Xiong Hai Zi</a></h1>
+  <h2><a href="/">熊孩子的学习</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-11-21T05:50:57.000Z"><a href="/2015/11/21/使用charles(青花瓷)，在mac环境下对android手机抓包/">11月 21 2015</a></time>
+      
+      
+  
+    <h1 class="title">使用Charles(青花瓷)，在Mac环境下对android手机抓包</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h4 id="1-下载工具">1.下载工具</h4>
+<p>安装抓包工具 Charles , 到<a href="http://www.charlesproxy.com/" target="_blank">官网</a>可下载到最新版本</p>
+<a id="more"></a>
+
+<h4 id="2-用安装了charles的电脑，代理待抓包anroid手机的网络连接">2.用安装了charles的电脑，代理待抓包anroid手机的网络连接</h4>
+<p>首先查看Mac的网络IP地址；打开电脑Charles软件后，接着打开手机设置，进入当前wifi连接，进入wifi设置界面，找到<code>代理</code>选项，设置<code>代理</code>为手动，将服务器填为电脑的IP，端口默认为8888（在charles的proxy setting中可以改这个端口号）。这时Charles弹出确认框，点击Allow按钮即可。然后就可以通过电脑抓包<br>手机的http请求了。</p>
+<h4 id="3-中文乱码问题解决">3.中文乱码问题解决</h4>
+<p>在charles的content/info.plist 中 的vmoption 添加-Dfile.encoding=UTF-8<br><img src="http://7xnr36.com1.z0.glb.clouddn.com/charles.png" alt="charles"></p>
+<h4 id="HTTPS抓包:">HTTPS抓包:</h4>
+<p>如果不进行下面的设置，https的reqeust和response都是乱码，设置完之后https就可以抓包了。</p>
+<h5 id="手机端设置">手机端设置</h5>
+<p>下载Charles证书<a href="http://www.charlesproxy.com/ssl.zip" target="_blank">http://www.charlesproxy.com/ssl.zip</a>，解压后导入到手机中，然后设置-&gt;安全-&gt;凭据存储-&gt;从存储设备安装，选中证书。</p>
+<p>v3.10之前的版本使用一个SSL根证书。仍然可以<a href="http://www.charlesproxy.com/assets/legacy-ssl/ssl.zip" target="_blank">下载证书</a>(安装在移动设备上)。注意,这些证书将不会在v3.10以及之后的版本有效。</p>
+<p>如果你运行的是v3.10或之后,请到帮助菜单,根据子菜单SSL Proxying提示操作。</p>
+<h5 id="电脑端设置">电脑端设置</h5>
+<p>1、在Charles的工具栏上点击设置按钮，选择Proxy Settings…</p>
+<p>切换到SSL选项卡，选中Enable SSL Proxying。（别急，选完先别关掉）</p>
+<p>2、SSL选项卡的Locations里填写要抓包的域名和端口，点击Add按钮，在弹出的表单中Host填写域名。比如填api.instagram.com，Port填443</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/Mac/">Mac</a>, <a href="/tags/工具/">工具</a>
+  </div>
+
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        <!-- UJian Button BEGIN -->
+<div class="ujian-hook"></div>
+<script type="text/javascript">var ujian_config = {num:12,lkrc:6,target:1,picSize:84,textHeight:45};</script>
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=2071102"></script>
+<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+<!-- UJian Button END -->
+
+        <div id="hm_t_85706"></div>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+<nav id="pagination" >
+    
+    <a href="/2015/11/30/core-data基本介绍/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/11/19/git介绍一/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+<!-- 多说评论框 start -->
+ <div class="ds-thread" data-thread-key="/2015/11/21/使用charles(青花瓷)，在mac环境下对android手机抓包/" data-title="使用Charles(青花瓷)，在Mac环境下对android手机抓包" data-url="http://biancheng.me/2015/11/21/使用charles(青花瓷)，在mac环境下对android手机抓包/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"weiji"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+<section id="comment">
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+    <input type="text"  onfocus="checkHttps" name="word"  size="30">
+    <input type="submit"value="百度搜索">
+</form>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };
+    function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+            return true;
+        }
+        else {
+            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            return true;
+        }
+    };
+</script>
+
+</div>
+
+  <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=1269803639114395364' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/Core Data/">Core Data</a><small>1</small></li>
+  
+    <li><a href="/tags/Git/">Git</a><small>1</small></li>
+  
+    <li><a href="/tags/Mac/">Mac</a><small>1</small></li>
+  
+    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/iOS/">iOS</a><small>4</small></li>
+  
+    <li><a href="/tags/swift/">swift</a><small>1</small></li>
+  
+    <li><a href="/tags/工具/">工具</a><small>1</small></li>
+  
+    <li><a href="/tags/第三方库/">第三方库</a><small>1</small></li>
+  
+    <li><a href="/tags/随笔/">随笔</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 熊孩子
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

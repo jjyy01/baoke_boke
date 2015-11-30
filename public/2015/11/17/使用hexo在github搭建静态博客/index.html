@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="ujianVerification" content="90f7e05b4ebf6d93b26b29571bfa3d8d" />
+<meta name="wumiiVerification" content="7aa6b405-12b5-4f11-866e-44744aa0ff26" />
+<meta name="baidu-site-verification" content="lN75kqASJm" />
+<meta name="baidu_union_verify" content="c369e2e06e939daead298c9098d2638e">
+
+  <meta charset="utf-8">
+  
+  <title>hexo生成静态博客 | Xiong Hai Zi</title>
+  <meta name="author" content="熊孩子">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="hexo生成静态博客"/>
+  <meta property="og:site_name" content="Xiong Hai Zi"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Xiong Hai Zi" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--
+-->
+  
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7689c42ef58b89bba0466fbb45f71d72";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+  
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Xiong Hai Zi</a></h1>
+  <h2><a href="/">熊孩子的学习</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-11-17T03:51:01.000Z"><a href="/2015/11/17/使用hexo在github搭建静态博客/">11月 17 2015</a></time>
+      
+      
+  
+    <h1 class="title">hexo生成静态博客</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="先屡一下思路">先屡一下思路</h3>
+<ol>
+<li>首先hexo是基于nodejs的，所以必须安装nodejs </li>
+<li>安装nodejs方法很多，我选择homebrew安装方式，所以需要安装它 </li>
+<li>安装homebrew就很简单了，mac自带ruby脚本功能，一句话搞定 </li>
+<li>hexo提交部署github需要使用git工具，所以需要安装git，用homebrew的话也是一句话搞定 </li>
+<li>OK整理一下安装顺序（homebrew-nodejs-hexo-git） </li>
+</ol>
+<a id="more"></a>
+
+<p>思路屡清楚了，下面安装方法整理一下 </p>
+<h3 id="1-安装brewhome，一句话搞定">1.安装brewhome，一句话搞定</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>ruby <span class="operator">-e</span> <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)</span>”</span>
+</pre></td></tr></table></figure>
+
+
+<h3 id="2-0_安装nodejs">2.0 安装nodejs</h3>
+<h4 id="2-1_第一种方式，brewhome安装，一句话搞定">2.1 第一种方式，brewhome安装，一句话搞定</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>brew <span class="keyword">install</span> node
+</pre></td></tr></table></figure>
+
+
+<h4 id="2-2_第二种方式，前提是已经安装好Xcode和git，安装git方法在下面介绍">2.2 第二种方式，前提是已经安装好Xcode和git，安装git方法在下面介绍</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>git clone git:<span class="comment">//github.com/joyent/node.git</span>
+cd node
+./configure
+<span class="built_in">make</span>
+sudo <span class="built_in">make</span> install
+</pre></td></tr></table></figure>
+
+
+<h4 id="2-3_第三种方式，下载源码(_http://nodejs-org/download/_)，编译执行同上">2.3 第三种方式，下载源码( <a href="http://nodejs.org/download/" target="_blank">http://nodejs.org/download/</a> )，编译执行同上</h4>
+<h3 id="3-0_安装hexo">3.0 安装hexo</h3>
+<h4 id="3-1_第一种方式，用nodejs自带npm安装">3.1 第一种方式，用nodejs自带npm安装</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>npm <span class="keyword">install</span> -g hexo
+hexo init
+npm <span class="keyword">install</span>
+</pre></td></tr></table></figure>
+
+
+<h4 id="3-2_第二种方式，下载源码(_http://www-nodejs-org/download/_)，编译执行">3.2 第二种方式，下载源码( <a href="http://www.nodejs.org/download/" target="_blank">http://www.nodejs.org/download/</a> )，编译执行</h4>
+<h3 id="4-0_安装git">4.0 安装git</h3>
+<h4 id="4-1_第一种方式，homebrew安装，一句话搞定">4.1 第一种方式，homebrew安装，一句话搞定</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="built_in">sudo</span> brew install git
+</pre></td></tr></table></figure>
+
+
+<h4 id="4-2_第二种方式，前提是已经安装好Xcode">4.2 第二种方式，前提是已经安装好Xcode</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>curl -O http://kernel<span class="preprocessor">.org</span>/pub/software/scm/git/git-<span class="number">1.7</span><span class="number">.5</span><span class="preprocessor">.tar</span><span class="preprocessor">.bz</span>2
+tar xjvf git-<span class="number">1.7</span><span class="number">.4</span><span class="number">.1</span><span class="preprocessor">.tar</span><span class="preprocessor">.bz</span>2
+cd git-<span class="number">1.7</span><span class="number">.4</span><span class="number">.1</span>
+./configure --prefix=/usr/local
+make
+sudo make install
+which git
+</pre></td></tr></table></figure>
+
+
+<h4 id="4-3_第三种方式，下载源码(_https://www-kernel-org/pub/software/scm/git/_)，编译执行同上">4.3 第三种方式，下载源码( <a href="https://www.kernel.org/pub/software/scm/git/" target="_blank">https://www.kernel.org/pub/software/scm/git/</a> )，编译执行同上</h4>
+<h4 id="4-4_第四种方式：图形界面安装OpenInGitGui(_https://code-google-com/p/git-osx-installer_)，但是天朝被墙">4.4 第四种方式：图形界面安装OpenInGitGui( <a href="https://code.google.com/p/git-osx-installer" target="_blank">https://code.google.com/p/git-osx-installer</a> )，但是天朝被墙</h4>
+<h4 id="4-5_配置">4.5 配置</h4>
+<h5 id="4-5-1_检查SSH_key">4.5.1 检查SSH key</h5>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="built_in">cd</span> ~/.ssh
+</pre></td></tr></table></figure>
+
+
+<h5 id="4-5-2_备份已有的key，（如果有的话）">4.5.2 备份已有的key，（如果有的话）</h5>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="keyword">mkdir</span> key_backup
+mv id_rsa* key_backup
+</pre></td></tr></table></figure>
+
+
+<h5 id="4-5-3_生成SSH_key">4.5.3 生成SSH key</h5>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>ssh<span class="attribute">-keygen</span> <span class="attribute">-t</span> rsa <span class="attribute">-C</span> <span class="string">"xxxx@xxxx.com”</span>
+</pre></td></tr></table></figure>
+
+
+<h5 id="4-5-4_将SSH_key添加到Github">4.5.4 将SSH key添加到Github</h5>
+<p>登录到GitHub页面，Account Settings-&gt;SSH Public Keys-&gt;Add another key将生成的key(id_rsa.pub文件）内容copy到输入框中，save。 </p>
+<h5 id="4-5-5_测试连接">4.5.5 测试连接</h5>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>ssh git<span class="variable">@github</span>.com
+</pre></td></tr></table></figure>
+
+
+<h5 id="4-5-6_设置个人信息">4.5.6 设置个人信息</h5>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="comment">git</span> <span class="comment">config</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">global</span> <span class="comment">user</span><span class="string">.</span><span class="comment">name</span> <span class="comment">"treason258”</span>
+<span class="comment">git</span> <span class="comment">config</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">global</span> <span class="comment">user</span><span class="string">.</span><span class="comment">email</span> <span class="comment">ma</span><span class="string">.</span><span class="comment">tengfei2008@163</span><span class="string">.</span><span class="comment">com</span>
+</pre></td></tr></table></figure>
+
+
+<h3 id="5_修改hexo根目录下_config-yml文件（xxxx为你的github账户名称）">5 修改hexo根目录下_config.yml文件（xxxx为你的github账户名称）</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="label">deploy:</span>
+  type: github
+  repo: git@github<span class="preprocessor">.com</span>:xxxx/xxxx<span class="preprocessor">.github</span><span class="preprocessor">.io</span><span class="preprocessor">.git</span>
+  branch: master
+</pre></td></tr></table></figure>
+
+
+<h3 id="6_注册github账号，新建名为xxxx-github-io的repository">6 注册github账号，新建名为xxxx.github.io的repository</h3>
+<p>到这，Hexo博客搭建已经完成了，并且可以git提交到github上，通过访问xxxx.github.io就可以访问本博客，关于hexo的一些操作以后有时间再整理吧</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/hexo/">hexo</a>
+  </div>
+
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        <!-- UJian Button BEGIN -->
+<div class="ujian-hook"></div>
+<script type="text/javascript">var ujian_config = {num:12,lkrc:6,target:1,picSize:84,textHeight:45};</script>
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=2071102"></script>
+<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+<!-- UJian Button END -->
+
+        <div id="hm_t_85706"></div>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+<nav id="pagination" >
+    
+    <a href="/2015/11/19/git介绍一/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/11/11/swift中switch使用/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+<!-- 多说评论框 start -->
+ <div class="ds-thread" data-thread-key="/2015/11/17/使用hexo在github搭建静态博客/" data-title="hexo生成静态博客" data-url="http://biancheng.me/2015/11/17/使用hexo在github搭建静态博客/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"weiji"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+<section id="comment">
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+    <input type="text"  onfocus="checkHttps" name="word"  size="30">
+    <input type="submit"value="百度搜索">
+</form>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };
+    function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+            return true;
+        }
+        else {
+            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            return true;
+        }
+    };
+</script>
+
+</div>
+
+  <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=1269803639114395364' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/Core Data/">Core Data</a><small>1</small></li>
+  
+    <li><a href="/tags/Git/">Git</a><small>1</small></li>
+  
+    <li><a href="/tags/Mac/">Mac</a><small>1</small></li>
+  
+    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/iOS/">iOS</a><small>4</small></li>
+  
+    <li><a href="/tags/swift/">swift</a><small>1</small></li>
+  
+    <li><a href="/tags/工具/">工具</a><small>1</small></li>
+  
+    <li><a href="/tags/第三方库/">第三方库</a><small>1</small></li>
+  
+    <li><a href="/tags/随笔/">随笔</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 熊孩子
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
